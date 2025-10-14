@@ -4,32 +4,26 @@ Nexora Portfolio es una plantilla profesional y moderna para portafolios de empr
 Comenzando
 
 1. Clona el repositorio
-text
 
-git clone [tu-repositorio]
+git clone https://github.com/calavanda/Nexora.git
 
 2. Instala las dependencias
-text
 
 npm install
 
 3. Ejecuta el servidor de desarrollo
-text
 
 npm run dev
 
 4. Configura la empresa
-text
 
 Edita src/resources/once-ui.config.js
 
 5. Personaliza el contenido
-text
 
 Modifica src/resources/content.js
 
 6. Agrega proyectos y casos de estudio
-text
 
 Crea nuevos archivos .mdx en src/app/blog/posts o src/app/work/projects
 
