@@ -1,31 +1,32 @@
 Nexora Portfolio
 
 Nexora Portfolio es una plantilla profesional y moderna para portafolios de empresas de diseño y desarrollo TI. Basada en una arquitectura limpia y escalable, soporta un sistema de contenido MDX para proyectos y publicaciones, páginas corporativas y galerías de trabajos.
+
 Comenzando
 
 1. Clona el repositorio
 
-git clone https://github.com/calavanda/Nexora.git
+    git clone https://github.com/calavanda/Nexora.git
 
 2. Instala las dependencias
 
-npm install
+    npm install
 
 3. Ejecuta el servidor de desarrollo
 
-npm run dev
+    npm run dev
 
 4. Configura la empresa
 
-Edita src/resources/once-ui.config.js
+    Edita src/resources/once-ui.config.js
 
 5. Personaliza el contenido
 
-Modifica src/resources/content.js
+    Modifica src/resources/content.js
 
 6. Agrega proyectos y casos de estudio
 
-Crea nuevos archivos .mdx en src/app/blog/posts o src/app/work/projects
+    Crea nuevos archivos .mdx en src/app/blog/posts o src/app/work/projects
 
 Nexora Portfolio fue construido con Once UI para Next.js. Requiere Node.js v18.17+.
 Documentación
