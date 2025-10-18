@@ -2,14 +2,32 @@ import { IconName } from "@/resources/icons";
 import { zones } from "tzdata";
 
 /**
- * IANA time zone string (e.g., 'Asia/Calcutta', 'Europe/Vienna').
+ * IANA time zone string.
  * See: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
  */
-export type IANATimeZone = Extract<keyof typeof zones, string>; // Narrow to string keys for React usage
+export type IANATimeZone = Extract<keyof typeof zones, string>;
+
+/**
+ * Represents a company.
+ */
+
+export type Company = {
+  /** Title */
+  name: string;
+  /** Description of the company */
+  description: string;
+  /** Path to avatar image */
+  avatar: string;
+  /** Description of the company */
+  email: string;
+  /** IANA time zone location */
+  location: IANATimeZone;
+};
 
 /**
  * Represents a person featured in the portfolio.
  */
+
 export type Person = {
   /** First name of the person */
   firstName: string;

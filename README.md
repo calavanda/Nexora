@@ -1,4 +1,4 @@
-Nexora Portfolio
+Nexora
 
 Nexora Portfolio es una plantilla profesional y moderna para portafolios de empresas de diseño y desarrollo TI. Basada en una arquitectura limpia y escalable, soporta un sistema de contenido MDX para proyectos y publicaciones, páginas corporativas y galerías de trabajos.
 

@@ -1,20 +1,49 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { Company, About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
-const person: Person = {
-  firstName: "Centro",
-  lastName: "Idiomas",
-  name: `Centro de Idiomas`,
-  role: "Institución Educativa",
-  avatar: "/images/avatar.jpg",
-  email: "centro_idiomas@gmail.com",
-  location: "America/Mexico_City",
-  languages: ["Español", "Inglés", "Francés", "Alemán"],
+
+const company: Company = {
+  name: `Nexora`,
+  description: "Institución Educativa",
+  avatar: "/images/nexora.png",
+  email: "nexora@nexora.com",
+  location: "America/Mexico_City"
 };
+
+
+const people: Person[] = [
+  {
+    firstName: "Alfredo",
+    lastName: "Castillo Geronimo",
+    name: "Alfredo",
+    role: "Director Creativo",
+    avatar: "/images/a1.jpg",
+    email: "alfredo@nexora.com",
+    location: "America/Mexico_City"
+  },
+  {
+    firstName: "Alondra Aimeé",
+    lastName: "Garcia Gómez",
+    name: "Alondra",
+    role: "Coordinadora de Identidad de Marca",
+    avatar: "/images/a2.jpg",
+    email: "alondra@nexora.com",
+    location: "America/Mexico_City"
+  },
+  {
+    firstName: "Baldomero",
+    lastName: "Jimenez Garcia",
+    name: "Baldomero",
+    role: "Gerente de Desarrollo de Producto",
+    avatar: "/images/a3.jpg",
+    email: "baldomero@nexora.com",
+    location: "America/Mexico_City"
+  }
+];
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Suscríbete al boletín de {person.name}</>,
+  title: <>Suscríbete al boletín de {company.name}</>,
   description: <>Recibe noticias, consejos y promociones sobre nuestros cursos de idiomas.</>,
 };
 
@@ -22,17 +51,17 @@ const social: Social = [
   {
     name: "Facebook",
     icon: "facebook",
-    link: "https://www.facebook.com/centro.idiomas",
+    link: "https://www.facebook.com",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/centro-idiomas",
+    link: "https://www.linkedin.com",
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:${company.email}`,
   },
 ];
 
@@ -40,8 +69,8 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Inicio",
-  title: `${person.name}`,
-  description: `Página oficial del ${person.name}, donde encontrarás información sobre nuestros cursos y programas.`,
+  title: `${company.name}`,
+  description: `Página oficial del ${company.name}, donde encontrarás información sobre nuestros cursos y programas.`,
   headline: <>Aprende idiomas y abre las puertas al mundo</>,
   featured: {
     display: true,
@@ -68,8 +97,8 @@ const home: Home = {
 const about: About = {
   path: "/about",
   label: "Nosotros",
-  title: `Sobre nosotros – ${person.name}`,
-  description: `Conoce más sobre ${person.name}, institución dedicada a la enseñanza de idiomas en ${person.location}.`,
+  title: `Sobre nosotros – ${company.name}`,
+  description: `Conoce más sobre ${company.name}, institución dedicada a la enseñanza de idiomas en ${company.location}.`,
   tableOfContent: {
     display: true,
     subItems: false,
