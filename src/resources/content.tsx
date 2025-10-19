@@ -4,20 +4,20 @@ import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const company: Company = {
   name: `Nexora`,
-  description: "Institución Educativa",
-  avatar: "/images/nexora.png",
+  description: "Empresa de Diseñadores",
+  avatar: "/images/NexoraLogo.png",
   email: "nexora@nexora.com",
   location: "America/Mexico_City"
 };
 
 
-const people: Person[] = [
+const person: Person[] = [
   {
     firstName: "Alfredo",
     lastName: "Castillo Geronimo",
     name: "Alfredo",
     role: "Director Creativo",
-    avatar: "/images/a1.jpg",
+    avatar: "/images/admin/a1.png",
     email: "alfredo@nexora.com",
     location: "America/Mexico_City"
   },
@@ -26,7 +26,7 @@ const people: Person[] = [
     lastName: "Garcia Gómez",
     name: "Alondra",
     role: "Coordinadora de Identidad de Marca",
-    avatar: "/images/a2.jpg",
+    avatar: "/images/admin/a2.png",
     email: "alondra@nexora.com",
     location: "America/Mexico_City"
   },
@@ -35,7 +35,7 @@ const people: Person[] = [
     lastName: "Jimenez Garcia",
     name: "Baldomero",
     role: "Gerente de Desarrollo de Producto",
-    avatar: "/images/a3.jpg",
+    avatar: "/images/admin/a3.png",
     email: "baldomero@nexora.com",
     location: "America/Mexico_City"
   }
@@ -44,7 +44,7 @@ const people: Person[] = [
 const newsletter: Newsletter = {
   display: true,
   title: <>Suscríbete al boletín de {company.name}</>,
-  description: <>Recibe noticias, consejos y promociones sobre nuestros cursos de idiomas.</>,
+  description: <>Recibe las últimas noticias sobre desarrollo web, tendencias tecnológicas y casos de éxito.</>,
 };
 
 const social: Social = [
@@ -65,31 +65,32 @@ const social: Social = [
   },
 ];
 
+
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Inicio",
   title: `${company.name}`,
-  description: `Página oficial del ${company.name}, donde encontrarás información sobre nuestros cursos y programas.`,
-  headline: <>Aprende idiomas y abre las puertas al mundo</>,
+  description: `Página oficial de ${company.name}, especialistas en desarrollo web multiplataforma y diseño digital.`,
+  headline: <>Transformamos ideas en experiencias digitales excepcionales</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Cursos Destacados</strong>{" "}
+        <strong className="ml-4">Servicios Destacados</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Inglés, Francés, Alemán y más
+          Web, Móvil, UX/UI y más
         </Text>
       </Row>
     ),
-    href: "/work/cursos",
+    href: "/work/servicios",
   },
   subline: (
     <>
-      Bienvenido al <strong>Centro de Idiomas</strong>, donde te ayudamos a
-      <br /> dominar nuevas lenguas y culturas. Aprende con profesores
-      certificados y materiales actualizados.
+      En <strong>Nexora</strong> creamos soluciones digitales innovadoras para
+      <br /> dispositivos móviles y desktop. Combinamos diseño intuitivo 
+      <br />con tecnología de vanguardia para impulsar tu negocio.
     </>
   ),
 };
@@ -98,7 +99,7 @@ const about: About = {
   path: "/about",
   label: "Nosotros",
   title: `Sobre nosotros – ${company.name}`,
-  description: `Conoce más sobre ${company.name}, institución dedicada a la enseñanza de idiomas en ${company.location}.`,
+  description: `Conoce más sobre ${company.name}, especialistas en desarrollo web multiplataforma con sede en ${company.location}.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -107,17 +108,19 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com", // Puedes cambiarlo a tu agenda o contacto
+    display: false,
+    link: "https://cal.com/nexora",
   },
   intro: {
     display: true,
     title: "Quiénes somos",
     description: (
       <>
-        Somos un centro educativo especializado en la enseñanza de diferentes
-        idiomas, comprometidos en brindar a nuestros estudiantes las mejores
-        herramientas para comunicarse en un mundo globalizado.
+        En Nexora somos especialistas en desarrollo web multiplataforma, 
+        creando experiencias digitales innovadoras para dispositivos móviles y desktop. 
+        Transformamos ideas en soluciones tecnológicas robustas, diseñadas para impulsar 
+        la presencia digital de nuestros clientes con interfaces intuitivas, 
+        rendimiento optimizado y las últimas tendencias en desarrollo web.
       </>
     ),
   },
@@ -126,17 +129,18 @@ const about: About = {
     title: "Experiencia",
     experiences: [
       {
-        company: "Centro de Idiomas",
-        timeframe: "2005 - Actualidad",
-        role: "Enseñanza de Idiomas",
+        company: "Nexora Digital Solutions",
+        timeframe: "2020 - Actualidad",
+        role: "Desarrollo Web Multiplataforma",
         achievements: [
-          <>Más de 5,000 alumnos capacitados en distintos idiomas.</>,
-          <>Programas personalizados para estudiantes, profesionales y empresas.</>,
+          <>Más de 50 proyectos web y móviles entregados exitosamente.</>,
+          <>Especialización en aplicaciones responsive y progressive web apps.</>,
+          <>Colaboración con startups y empresas establecidas en diversos sectores.</>,
         ],
         images: [
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Clases en el centro",
+            alt: "Desarrollo web en Nexora",
             width: 16,
             height: 9,
           },
@@ -146,51 +150,59 @@ const about: About = {
   },
   studies: {
     display: true,
-    title: "Programas de Estudio",
+    title: "Servicios",
     institutions: [
       {
-        name: "Cursos de Inglés",
-        description: <>Desde nivel básico hasta avanzado, con certificación internacional.</>,
+        name: "Desarrollo Web Responsive",
+        description: <>Sitios web que se adaptan perfectamente a cualquier dispositivo y pantalla.</>,
       },
       {
-        name: "Cursos de Francés",
-        description: <>Clases presenciales y en línea, adaptadas a tu ritmo.</>,
+        name: "Aplicaciones Móviles",
+        description: <>Desarrollo de apps nativas e híbridas para iOS y Android.</>,
       },
       {
-        name: "Cursos de Aleman",
-        description: <>Clases presenciales. Desde nivel básico hasta avanzado.</>,
+        name: "Diseño UX/UI",
+        description: <>Interfaces intuitivas y experiencias de usuario excepcionales.</>,
       },
       {
-        name: "Cursos de Japones",
-        description: <>Clases = en línea, adaptadas a tu ritmo. Desde nivel básico hasta avanzado.</>,
+        name: "Consultoría Tecnológica",
+        description: <>Asesoramiento especializado para optimizar tu presencia digital.</>,
       },
     ],
   },
   technical: {
     display: true,
-    title: "Métodos de Enseñanza",
+    title: "Tecnologías y Metodologías",
     skills: [
       {
-        title: "Clases Interactivas",
+        title: "Desarrollo Frontend",
         description: (
-          <>Dinámicas enfocadas en conversación, comprensión auditiva y práctica real.</>
+          <>React, Next.js, TypeScript, y frameworks modernos para interfaces dinámicas y performantes.</>
         ),
         tags: [
           {
-            name: "Educación",
-            icon: "book",
+            name: "React",
+            icon: "code",
+          },
+          {
+            name: "Next.js",
+            icon: "globe",
           },
         ],
       },
       {
-        title: "Cursos en Línea",
+        title: "Diseño Responsive",
         description: (
-          <>Aprende desde cualquier lugar con nuestra plataforma digital.</>
+          <>Enfoque mobile-first y diseño adaptativo para garantizar perfecta visualización en todos los dispositivos.</>
         ),
         tags: [
           {
-            name: "E-learning",
-            icon: "laptop",
+            name: "CSS3",
+            icon: "layout",
+          },
+          {
+            name: "Mobile-First",
+            icon: "smartphone",
           },
         ],
       },
@@ -198,37 +210,39 @@ const about: About = {
   },
 };
 
+
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Consejos y artículos sobre idiomas",
-  description: `Lee las últimas noticias y recomendaciones de ${person.name}`,
+  title: "Artículos sobre desarrollo web y tecnología",
+  description: `Lee las últimas tendencias, tutoriales y casos de estudio de ${company.name}`,
 };
 
 const work: Work = {
   path: "/work",
-  label: "Cursos",
-  title: `Cursos – ${person.name}`,
-  description: `Descubre los programas y cursos disponibles en ${person.name}`,
+  label: "Portafolio",
+  title: `Portafolio – ${company.name}`,
+  description: `Descubre nuestros proyectos y casos de éxito en desarrollo web multiplataformaen ${company.name}`,
 };
+
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Galería",
-  title: `Galería – ${person.name}`,
-  description: `Fotos y experiencias de estudiantes en ${person.name}`,
+  title: `Galería – ${company.name}`,
+  description: `Capturas y demostraciones de nuestros proyectos de desarrollo web en ${company.name}`,
   images: [
     {
-      src: "/images/gallery/clase-ingles.jpg",
-      alt: "Clase de inglés",
+      src: "/images/gallery/proyecto-web-1.jpg",
+      alt: "Proyecto de desarrollo web",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/clase-frances.jpg",
-      alt: "Clase de francés",
+      src: "/images/gallery/proyecto-movil-1.jpg",
+      alt: "Aplicación móvil desarrollada",
       orientation: "vertical",
     },
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, gallery, company };

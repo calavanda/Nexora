@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person, about, blog, work, gallery } from "@/resources";
+import { routes, display, person, about, blog, work, gallery, company } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
@@ -73,7 +73,7 @@ export const Header = () => {
         }}
       >
         <Row paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
-          {display.location && <Row s={{ hide: true }}>{person.location}</Row>}
+          {display.location && <Row s={{ hide: true }}>{company.location}</Row>}
         </Row>
         <Row fillWidth horizontal="center">
           <Row
@@ -203,7 +203,7 @@ export const Header = () => {
             gap="20"
           >
             <Flex s={{ hide: true }}>
-              {display.time && <TimeDisplay timeZone={person.location} />}
+              {display.time && <TimeDisplay timeZone={company.location} />}
             </Flex>
           </Flex>
         </Flex>
